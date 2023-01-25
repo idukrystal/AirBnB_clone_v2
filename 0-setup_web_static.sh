@@ -17,7 +17,7 @@ sudo chown ubuntu:ubuntu  /data/ -R
 
 sudo sed -i "s/server_name _;/server_name crysart.tech www.crysart.tech;/" /etc/nginx/sites-enabled/default*
 
-string="server_name crysart.tech www.crysart.tech;\n\n\tlocation /hbnb_static/ {\n\t\talias /data/web_static/current/;\n\t\ttry_files \$uri \$uri/ =404;\n\t}"
+string="server_name crysart.tech www.crysart.tech;\n\n\tlocation /hbnb_static {\n\t\talias /data/web_static/current/;\n\t\ttry_files \$uri \$uri/ =404;\n\t}"
 
 sudo sed -i "s?server_name crysart.tech www.crysart.tech;?$string?" /etc/nginx/sites-enabled/default*
 
