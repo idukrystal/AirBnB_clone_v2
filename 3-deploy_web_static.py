@@ -8,6 +8,7 @@ files frpm server to ensure a smooth working flow and enviroment also
 from fabric.api import env, local, put, run
 from datetime import datetime
 from os.path import exists, isdir
+env.hosts = ['3.89.155.51', '100.26.169.4']
 
 
 @runs_once
@@ -32,9 +33,6 @@ def do_pack():
     except Exception:
         output = None
     return output
-
-
-env.hosts = ['3.89.155.51', '100.26.169.4']
 
 
 def do_deploy(archive_path):
