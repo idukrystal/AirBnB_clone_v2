@@ -11,7 +11,7 @@ sudo mkdir -p /data/web_static/shared/
 
 echo "Some Static Stuff!" | sudo tee -a /data/web_static/releases/test/index.html
 
-sudo ln -s -f  /data/web_static/rxeleases/test /data/web_static/current
+sudo ln -s -f  /data/web_static/releases/test /data/web_static/current
 
 sudo chown ubuntu:ubuntu  /data/ -R
 
