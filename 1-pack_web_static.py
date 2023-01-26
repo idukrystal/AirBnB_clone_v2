@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """A python fabric  script that generates a .tgz for python ."""
 import os
 from datetime import datetime
