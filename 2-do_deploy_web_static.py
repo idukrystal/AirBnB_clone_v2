@@ -40,7 +40,7 @@ def do_deploy(archive_path):
     """
     if os.path.exists(archive_path):
         archived_file = archive_path[9:]
-        newest_version = "/data/web_static/releases/" + archived_file3[:-4]
+        newest_version = "/data/web_static/releases/" + archived_file[:-4]
         archived_file = "/tmp/" + archived_file
         put(archive_path, "/tmp/")
         run("sudo mkdir -p {}".format(newest_version))
