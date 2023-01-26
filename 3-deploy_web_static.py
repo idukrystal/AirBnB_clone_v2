@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-"""Deploys new version completely to server"""
+"""
+Deploys new version completely to server and deletes all temporary
+files frpm server to ensure a smooth working flow and enviroment also
+"""
+
+
 from fabric.api import env, local, put, run
 from datetime import datetime
 from os.path import exists, isdir
